@@ -21,8 +21,8 @@ async def main():
     dp.include_router(start_router)
     dp.include_router(pic_router)
     dp.include_router(myinfo_router)
-    dp.include_router(echo_router)
     dp.include_router(menu_router)
+    dp.include_router(echo_router)
     # запуск бота
     await dp.start_polling(bot)
 
